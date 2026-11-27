@@ -1,0 +1,1172 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>青草衣衣_青草衣衣视频作品_青草衣衣自然生活影像</title>
+<meta name="description" content="青草衣衣是专注自然生活影像的视频品牌，提供青草衣衣的田园纪录短片、手作教程、四季食单与慢生活访谈，适合喜欢自然美学与手作生活方式的观众长期观看。">
+<meta name="keywords" content="自然生活影像,田园纪录短片,手作教程,四季食单,慢生活访谈">
+<style>
+:root{
+  --green-900:#1f3a24;
+  --green-700:#2f5c37;
+  --green-500:#4f8a4f;
+  --green-300:#8fbf87;
+  --green-100:#e8f1e2;
+  --green-50:#f4f8f0;
+  --earth:#8a6a3f;
+  --earth-light:#c9a878;
+  --ink:#22301f;
+  --ink-soft:#4a5a46;
+  --muted:#75836f;
+  --line:#d7e2cd;
+  --bg:#f7faf4;
+  --panel:#ffffff;
+  --radius:14px;
+  --radius-sm:8px;
+  --shadow:0 2px 10px rgba(31,58,36,.07);
+  --shadow-lg:0 8px 28px rgba(31,58,36,.12);
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  --announce-h:38px;
+  --header-h:64px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:var(--font);
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.75;
+  font-size:15px;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%;}
+a{color:var(--green-700);text-decoration:none;}
+a:hover{color:var(--green-500);}
+h1,h2,h3,h4{margin:0;line-height:1.35;color:var(--green-900);font-weight:700;}
+p{margin:0;}
+ul,ol{margin:0;padding:0;list-style:none;}
+button{font-family:inherit;}
+
+/* ============ 吸顶公告条 ============ */
+.announce{
+  position:sticky;top:0;z-index:60;
+  height:var(--announce-h);
+  background:linear-gradient(90deg,var(--green-900),var(--green-700) 60%,var(--earth));
+  color:#eef6e8;
+  font-size:13px;
+  display:flex;align-items:center;
+  overflow:hidden;
+}
+.announce-inner{
+  width:100%;max-width:1360px;margin:0 auto;padding:0 20px;
+  display:flex;align-items:center;gap:14px;
+}
+.announce .dot{
+  width:7px;height:7px;border-radius:50%;background:var(--green-300);
+  box-shadow:0 0 0 4px rgba(143,191,135,.25);flex:none;
+  animation:pulse 2.2s infinite;
+}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.announce-text{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.announce a{color:#dff0d4;text-decoration:underline;text-underline-offset:3px;margin-left:auto;flex:none;font-size:12.5px;}
+.announce a:hover{color:#fff;}
+
+/* ============ 吸顶页头 ============ */
+.site-header{
+  position:sticky;top:var(--announce-h);z-index:55;
+  height:var(--header-h);
+  background:rgba(247,250,244,.94);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{
+  max-width:1360px;margin:0 auto;padding:0 20px;height:100%;
+  display:flex;align-items:center;gap:24px;
+}
+.brand{display:flex;align-items:center;gap:10px;flex:none;}
+.brand-mark{width:38px;height:38px;flex:none;}
+.brand-text{display:flex;flex-direction:column;line-height:1.1;}
+.brand-name{font-size:19px;font-weight:800;letter-spacing:.5px;color:var(--green-900);}
+.brand-sub{font-size:10.5px;color:var(--muted);letter-spacing:1.6px;}
+.main-nav{display:flex;gap:4px;flex-wrap:wrap;}
+.main-nav a{
+  display:inline-block;padding:6px 11px;border-radius:999px;
+  font-size:14px;color:var(--ink-soft);font-weight:500;
+}
+.main-nav a:hover{background:var(--green-100);color:var(--green-900);}
+.header-tools{margin-left:auto;display:flex;align-items:center;gap:10px;flex:none;}
+.search-box{display:flex;align-items:center;background:#fff;border:1px solid var(--line);border-radius:999px;padding:0 4px 0 14px;height:36px;}
+.search-box input{
+  border:none;outline:none;background:transparent;width:132px;font-size:13.5px;color:var(--ink);
+}
+.search-box input::placeholder{color:#a3b09b;}
+.search-box button{
+  border:none;background:var(--green-700);color:#fff;border-radius:999px;
+  height:28px;padding:0 13px;font-size:12.5px;cursor:pointer;
+}
+.search-box button:hover{background:var(--green-500);}
+.btn-sub{
+  height:36px;padding:0 16px;border-radius:999px;border:none;cursor:pointer;
+  background:var(--green-700);color:#fff;font-size:13.5px;font-weight:600;
+  display:inline-flex;align-items:center;gap:6px;white-space:nowrap;
+}
+.btn-sub:hover{background:var(--green-500);}
+
+/* ============ 布局 ============ */
+.wrap{max-width:1360px;margin:0 auto;padding:0 20px;}
+.layout{
+  display:grid;
+  grid-template-columns:190px minmax(0,1fr) 260px;
+  gap:28px;
+  align-items:start;
+  padding:26px 0 60px;
+}
+.anchor-target{scroll-margin-top:calc(var(--announce-h) + var(--header-h) + 16px);}
+
+/* ============ 首屏 ============ */
+.hero{
+  background:
+    radial-gradient(900px 340px at 82% -10%,rgba(143,191,135,.30),transparent 70%),
+    radial-gradient(600px 260px at 4% 110%,rgba(201,168,120,.20),transparent 70%),
+    linear-gradient(160deg,#f2f8ec,#eaf3e2 55%,#f6faf2);
+  border-bottom:1px solid var(--line);
+  position:relative;overflow:hidden;
+}
+.hero-inner{
+  max-width:1360px;margin:0 auto;padding:52px 20px 56px;
+  display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);
+  gap:48px;align-items:center;
+}
+.hero-tag{
+  display:inline-flex;align-items:center;gap:8px;
+  background:#fff;border:1px solid var(--line);border-radius:999px;
+  padding:5px 14px;font-size:12.5px;color:var(--green-700);font-weight:600;
+  box-shadow:var(--shadow);
+}
+.hero-tag .leaf{width:14px;height:14px;}
+.hero h1{
+  font-size:clamp(34px,4.4vw,54px);
+  letter-spacing:2px;margin:18px 0 16px;
+  color:var(--green-900);
+}
+.hero h1 .accent{
+  color:var(--green-500);
+  -webkit-text-stroke:0;
+}
+.hero-desc{
+  font-size:16px;color:var(--ink-soft);max-width:520px;line-height:1.85;
+}
+.hero-actions{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap;}
+.btn-primary,.btn-ghost{
+  height:46px;padding:0 24px;border-radius:999px;font-size:14.5px;font-weight:600;
+  display:inline-flex;align-items:center;gap:8px;cursor:pointer;border:1px solid transparent;
+  transition:.18s;
+}
+.btn-primary{background:var(--green-700);color:#fff;box-shadow:0 6px 18px rgba(47,92,55,.28);}
+.btn-primary:hover{background:var(--green-500);color:#fff;transform:translateY(-1px);}
+.btn-ghost{background:#fff;color:var(--green-700);border-color:var(--line);}
+.btn-ghost:hover{border-color:var(--green-300);color:var(--green-900);}
+.hero-stats{display:flex;gap:28px;margin-top:34px;flex-wrap:wrap;}
+.hero-stats .st b{display:block;font-size:22px;color:var(--green-900);line-height:1.2;}
+.hero-stats .st span{font-size:12.5px;color:var(--muted);}
+.hero-visual{position:relative;}
+.hero-visual svg{width:100%;height:auto;display:block;filter:drop-shadow(0 18px 34px rgba(31,58,36,.13));}
+.hero-badge{
+  position:absolute;right:6px;bottom:10px;background:#fff;border-radius:12px;
+  padding:10px 14px;box-shadow:var(--shadow-lg);border:1px solid var(--line);
+  font-size:12.5px;color:var(--ink-soft);line-height:1.5;max-width:190px;
+}
+.hero-badge b{color:var(--green-700);display:block;font-size:13px;}
+
+/* ============ 侧栏通用 ============ */
+.side-card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px;margin-bottom:18px;box-shadow:var(--shadow);
+}
+.side-title{
+  font-size:13.5px;font-weight:700;color:var(--green-900);
+  display:flex;align-items:center;gap:7px;margin-bottom:12px;
+  padding-bottom:9px;border-bottom:1px dashed var(--line);
+}
+.side-title::before{
+  content:"";width:4px;height:14px;border-radius:2px;background:var(--green-500);flex:none;
+}
+.chan-list li + li{margin-top:2px;}
+.chan-list a{
+  display:flex;align-items:center;justify-content:space-between;gap:8px;
+  padding:7px 10px;border-radius:var(--radius-sm);font-size:13.5px;color:var(--ink-soft);
+}
+.chan-list a:hover{background:var(--green-50);color:var(--green-900);}
+.chan-list .cnt{font-size:11.5px;color:var(--muted);flex:none;}
+.hot-list li{display:flex;gap:10px;padding:9px 0;border-bottom:1px dashed #e6eede;font-size:13px;}
+.hot-list li:last-child{border-bottom:none;}
+.hot-list .rank{
+  width:19px;height:19px;border-radius:5px;background:var(--green-100);color:var(--green-700);
+  font-size:11.5px;font-weight:700;display:flex;align-items:center;justify-content:center;flex:none;margin-top:2px;
+}
+.hot-list li:nth-child(1) .rank{background:var(--green-700);color:#fff;}
+.hot-list li:nth-child(2) .rank{background:var(--green-500);color:#fff;}
+.hot-list li:nth-child(3) .rank{background:var(--earth-light);color:#fff;}
+.hot-list a{color:var(--ink);font-weight:600;font-size:13px;}
+.hot-list a:hover{color:var(--green-500);}
+.hot-list .meta{display:block;font-size:11.5px;color:var(--muted);font-weight:400;margin-top:1px;}
+.update-flow li{font-size:12.8px;padding:8px 0;border-bottom:1px dashed #e6eede;display:flex;gap:8px;}
+.update-flow li:last-child{border-bottom:none;}
+.update-flow .t{color:var(--green-500);font-weight:600;flex:none;font-size:11.5px;padding-top:1px;}
+.update-flow .n{color:var(--ink-soft);}
+
+/* ============ 主内容板块 ============ */
+.section{margin-bottom:34px;}
+.sec-head{
+  display:flex;align-items:flex-end;justify-content:space-between;gap:14px;
+  margin-bottom:16px;flex-wrap:wrap;
+}
+.sec-head h2{
+  font-size:21px;letter-spacing:.5px;display:flex;align-items:center;gap:9px;
+}
+.sec-head h2::before{
+  content:"";width:6px;height:20px;border-radius:3px;
+  background:linear-gradient(180deg,var(--green-500),var(--green-300));flex:none;
+}
+.sec-desc{font-size:13px;color:var(--muted);}
+.sec-more{font-size:13px;color:var(--green-700);font-weight:600;white-space:nowrap;}
+.sec-more::after{content:" →";}
+
+.overview{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:22px 24px;box-shadow:var(--shadow);font-size:14.5px;color:var(--ink-soft);
+}
+.overview p+p{margin-top:12px;}
+.overview strong{color:var(--green-900);}
+
+/* 精选卡片 */
+.card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;}
+.card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;
+  transition:.2s;
+}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:var(--green-300);}
+.card-thumb{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--green-100);}
+.card-thumb img{width:100%;height:100%;object-fit:cover;}
+.card-type{
+  position:absolute;left:9px;top:9px;background:rgba(31,58,36,.86);color:#fff;
+  font-size:11.5px;padding:2px 9px;border-radius:999px;font-weight:500;backdrop-filter:blur(3px);
+}
+.card-body{padding:13px 14px 15px;display:flex;flex-direction:column;gap:8px;flex:1;}
+.card-title{font-size:15px;font-weight:700;color:var(--green-900);line-height:1.45;}
+.card-title:hover{color:var(--green-500);}
+.card-text{font-size:12.8px;color:var(--ink-soft);line-height:1.65;flex:1;}
+.card-tags{display:flex;flex-wrap:wrap;gap:5px;}
+.tag{
+  font-size:11px;padding:1.5px 8px;border-radius:999px;
+  background:var(--green-50);color:var(--green-700);border:1px solid var(--green-100);
+}
+.card-meta{
+  display:flex;align-items:center;justify-content:space-between;gap:8px;
+  font-size:11.5px;color:var(--muted);padding-top:8px;border-top:1px dashed #e6eede;
+}
+.score{color:var(--earth);font-weight:700;}
+
+/* 动态列表 */
+.news-list{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);}
+.news-list li{
+  display:flex;align-items:flex-start;gap:14px;padding:13px 18px;
+  border-bottom:1px solid #edf3e8;
+}
+.news-list li:last-child{border-bottom:none;}
+.news-list li:hover{background:var(--green-50);}
+.news-date{
+  flex:none;width:76px;font-size:12px;color:var(--green-700);font-weight:600;
+  background:var(--green-50);border-radius:6px;text-align:center;padding:2px 0;margin-top:2px;
+}
+.news-main{min-width:0;}
+.news-main b{font-size:14px;color:var(--green-900);display:block;margin-bottom:2px;}
+.news-main span{font-size:12.8px;color:var(--ink-soft);}
+
+/* 分类入口 */
+.cat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;}
+.cat-item{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:14px 14px 13px;box-shadow:var(--shadow);transition:.18s;display:block;
+}
+.cat-item:hover{border-color:var(--green-300);background:var(--green-50);transform:translateY(-2px);}
+.cat-item b{font-size:14px;color:var(--green-900);display:block;}
+.cat-item span{font-size:11.5px;color:var(--muted);display:block;margin-top:3px;line-height:1.5;}
+
+/* 深度解析 */
+.article{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px 28px;box-shadow:var(--shadow);
+}
+.article h3{
+  font-size:16.5px;margin:24px 0 10px;padding-left:11px;border-left:3px solid var(--green-500);
+}
+.article h3:first-child{margin-top:0;}
+.article p{font-size:14.3px;color:var(--ink-soft);margin-bottom:11px;}
+.article ul{margin:6px 0 14px;padding-left:2px;}
+.article ul li{
+  font-size:14px;color:var(--ink-soft);padding-left:18px;position:relative;margin-bottom:7px;
+}
+.article ul li::before{
+  content:"";position:absolute;left:2px;top:9px;width:6px;height:6px;border-radius:50%;
+  background:var(--green-300);
+}
+.article strong{color:var(--green-900);}
+
+/* 指南步骤 */
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;}
+.step{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px 15px;box-shadow:var(--shadow);position:relative;
+}
+.step-num{
+  width:26px;height:26px;border-radius:50%;background:var(--green-700);color:#fff;
+  font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-bottom:10px;
+}
+.step b{font-size:14px;color:var(--green-900);display:block;margin-bottom:5px;}
+.step p{font-size:12.6px;color:var(--ink-soft);line-height:1.65;}
+
+/* FAQ */
+.faq{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);}
+.faq details{border-bottom:1px solid #edf3e8;}
+.faq details:last-child{border-bottom:none;}
+.faq summary{
+  cursor:pointer;padding:14px 18px;font-size:14px;font-weight:600;color:var(--green-900);
+  list-style:none;display:flex;align-items:center;gap:10px;
+}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary::before{
+  content:"+";width:18px;height:18px;border-radius:50%;background:var(--green-100);
+  color:var(--green-700);font-size:14px;display:flex;align-items:center;justify-content:center;flex:none;
+  font-weight:700;line-height:1;
+}
+.faq details[open] summary::before{content:"−";background:var(--green-700);color:#fff;}
+.faq summary:hover{background:var(--green-50);}
+.faq .ans{padding:0 18px 15px 46px;font-size:13.4px;color:var(--ink-soft);}
+
+/* 评论 */
+.comments{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+.cmt{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:13px 15px;box-shadow:var(--shadow);
+}
+.cmt-head{display:flex;align-items:center;gap:9px;margin-bottom:7px;}
+.avatar{
+  width:28px;height:28px;border-radius:50%;flex:none;color:#fff;font-size:12px;font-weight:700;
+  display:flex;align-items:center;justify-content:center;
+}
+.cmt-head b{font-size:13px;color:var(--green-900);}
+.cmt-head .time{font-size:11px;color:var(--muted);margin-left:auto;}
+.cmt p{font-size:13px;color:var(--ink-soft);line-height:1.68;}
+.cmt .like{font-size:11.5px;color:var(--muted);margin-top:6px;}
+
+/* 资讯 */
+.info-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;}
+.info-item{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:15px 17px;box-shadow:var(--shadow);
+}
+.info-item .d{font-size:11.5px;color:var(--green-500);font-weight:600;}
+.info-item b{display:block;font-size:14px;color:var(--green-900);margin:5px 0 6px;line-height:1.5;}
+.info-item p{font-size:12.8px;color:var(--ink-soft);line-height:1.65;}
+
+/* 相关推荐标签 */
+.rel-tags{display:flex;flex-wrap:wrap;gap:9px;}
+.rel-tags a{
+  background:var(--panel);border:1px solid var(--line);border-radius:999px;
+  padding:7px 15px;font-size:13px;color:var(--ink-soft);box-shadow:var(--shadow);
+}
+.rel-tags a:hover{background:var(--green-50);border-color:var(--green-300);color:var(--green-900);}
+
+/* 时间线 */
+.timeline{position:relative;padding-left:22px;}
+.timeline::before{
+  content:"";position:absolute;left:6px;top:6px;bottom:6px;width:2px;
+  background:linear-gradient(180deg,var(--green-300),var(--green-100));
+}
+.tl-item{position:relative;padding-bottom:18px;}
+.tl-item:last-child{padding-bottom:0;}
+.tl-item::before{
+  content:"";position:absolute;left:-21px;top:6px;width:10px;height:10px;border-radius:50%;
+  background:#fff;border:2.5px solid var(--green-500);
+}
+.tl-item b{font-size:13.8px;color:var(--green-900);display:block;}
+.tl-item span{font-size:12.6px;color:var(--ink-soft);}
+.tl-item .date{font-size:11.5px;color:var(--muted);}
+
+/* 可信度分层 */
+.trust-board{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;
+}
+.trust-col{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:15px 16px;box-shadow:var(--shadow);
+}
+.trust-col h4{font-size:13.5px;margin-bottom:4px;display:flex;align-items:center;gap:7px;}
+.trust-col h4 i{width:8px;height:8px;border-radius:50%;flex:none;}
+.trust-col .lv{font-size:11.5px;color:var(--muted);margin-bottom:10px;}
+.trust-col li{font-size:12.8px;color:var(--ink-soft);padding:5px 0;border-bottom:1px dashed #eef4e8;}
+.trust-col li:last-child{border-bottom:none;}
+.trust-col li b{color:var(--green-900);}
+
+/* 搜索无结果 */
+.no-result{
+  display:none;background:#fff;border:1px dashed var(--green-300);border-radius:var(--radius);
+  padding:16px;text-align:center;color:var(--muted);font-size:13.5px;margin-bottom:18px;
+}
+.no-result.show{display:block;}
+
+/* ============ 页尾 ============ */
+.site-footer{background:var(--green-900);color:#c8d9c1;margin-top:10px;}
+.footer-top{
+  max-width:1360px;margin:0 auto;padding:44px 20px 32px;
+  display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:32px;
+}
+.footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:12px;}
+.footer-brand .brand-name{color:#fff;}
+.footer-brand .brand-sub{color:#9fb897;}
+.footer-desc{font-size:13px;line-height:1.8;color:#a9c1a1;max-width:320px;}
+.footer-col h4{font-size:13.5px;color:#fff;margin-bottom:12px;letter-spacing:.5px;}
+.footer-col li{margin-bottom:8px;}
+.footer-col a{font-size:13px;color:#a9c1a1;}
+.footer-col a:hover{color:#fff;}
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,.12);
+  max-width:1360px;margin:0 auto;padding:16px 20px 26px;
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  font-size:12px;color:#8ea886;
+}
+
+/* ============ 响应式 ============ */
+@media (max-width:1100px){
+  .layout{grid-template-columns:170px minmax(0,1fr) 230px;gap:20px;}
+  .card-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .cat-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .footer-top{grid-template-columns:1fr 1fr;gap:26px;}
+}
+@media (max-width:1024px){
+  .layout{grid-template-columns:minmax(0,1fr) 260px;}
+  .left-rail{display:none;}
+  .hero-inner{grid-template-columns:1fr;gap:34px;padding:40px 20px 44px;}
+  .hero-visual{max-width:520px;}
+  .main-nav{display:none;}
+  .search-box input{width:100px;}
+}
+@media (max-width:740px){
+  .layout{grid-template-columns:minmax(0,1fr);gap:20px;padding:18px 0 44px;}
+  .right-rail{width:100%;}
+  .hero-inner{padding:32px 18px 38px;}
+  .hero h1{font-size:34px;}
+  .hero-stats{gap:20px;}
+  .card-grid,.cat-grid,.steps,.comments,.info-list,.trust-board{grid-template-columns:minmax(0,1fr);}
+  .header-inner{gap:12px;padding:0 14px;}
+  .search-box{display:none;}
+  .wrap{padding:0 14px;}
+  .article{padding:20px 18px;}
+  .footer-top{grid-template-columns:1fr;padding:32px 16px 24px;}
+  .announce-inner{padding:0 14px;gap:9px;}
+  .announce a{display:none;}
+  .news-list li{flex-direction:column;gap:6px;}
+  .news-date{width:auto;display:inline-block;padding:1px 10px;margin-top:0;}
+  .faq .ans{padding-left:18px;}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告条 -->
+<div class="announce" id="announce">
+  <div class="announce-inner">
+    <span class="dot" aria-hidden="true"></span>
+    <span class="announce-text">11 月 25 日更新：冬季食单《腌菜与炉火》上线，四季手作教程新增 4 集</span>
+    <a href="/#updates">查看最新更新 →</a>
+  </div>
+</div>
+
+<!-- 吸顶页头 -->
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="/#top" aria-label="青草衣衣 首页">
+      <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+        <circle cx="24" cy="24" r="22" fill="#e8f1e2"/>
+        <path d="M24 37c0-9 3-15 10-19-1 10-5 15-10 19z" fill="#4f8a4f"/>
+        <path d="M24 37c0-9-3-15-10-19 1 10 5 15 10 19z" fill="#8fbf87"/>
+        <path d="M24 37V17" stroke="#2f5c37" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="24" cy="14" r="3" fill="#c9a878"/>
+      </svg>
+      <span class="brand-text">
+        <span class="brand-name">青草衣衣</span>
+        <span class="brand-sub">GRASS &amp; GARMENT</span>
+      </span>
+    </a>
+    <nav class="main-nav" aria-label="主导航">
+      <a href="/#featured">精选影像</a>
+      <a href="/#updates">最新更新</a>
+      <a href="/#categories">分类频道</a>
+      <a href="/#deepdive">深度解析</a>
+      <a href="/#guide">观看指南</a>
+      <a href="/#faq">常见问答</a>
+      <a href="/#comments">观众评论</a>
+    </nav>
+    <div class="header-tools">
+      <form class="search-box" role="search" id="searchForm">
+        <input type="search" id="searchInput" placeholder="搜索条目 / 类型" aria-label="搜索站内条目">
+        <button type="submit">搜索</button>
+      </form>
+      <button class="btn-sub" type="button" id="subBtn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v18M3 12h18" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg>
+        订阅更新
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- 首屏 -->
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <div>
+      <span class="hero-tag">
+        <svg class="leaf" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4C10 4 4 9 4 17c8 0 14-5 16-13z" fill="#8fbf87"/><path d="M4 17c4-6 8-9 13-11" stroke="#2f5c37" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>
+        自然生活影像品牌 · 每周四更新
+      </span>
+      <h1>青草衣衣</h1>
+      <p class="hero-desc">用镜头记录田园、手作与四季饮食的慢生活影像。这里收录青草衣衣的纪录短片、四季食单、植物染与缝纫教程，以及和手艺人的长谈，适合想把日子过得慢一点的人长期观看。</p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="/#featured">开始观看精选影像</a>
+        <a class="btn-ghost" href="/#categories">按分类浏览频道</a>
+      </div>
+      <div class="hero-stats">
+        <div class="st"><b>268</b><span>部影像条目</span></div>
+        <div class="st"><b>42</b><span>期四季食单</span></div>
+        <div class="st"><b>11.6万</b><span>长期订阅观众</span></div>
+        <div class="st"><b>2019</b><span>开拍至今</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <svg viewBox="0 0 520 400" role="img" aria-label="青草衣衣田园影像构图：草地、木屋与晾晒的衣物">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#eef7e6"/><stop offset="1" stop-color="#dcecd0"/>
+          </linearGradient>
+          <linearGradient id="hill" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#a7cf9b"/><stop offset="1" stop-color="#7fb473"/>
+          </linearGradient>
+          <linearGradient id="hill2" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#8fbf87"/><stop offset="1" stop-color="#5f9a5c"/>
+          </linearGradient>
+        </defs>
+        <rect width="520" height="400" rx="20" fill="url(#sky)"/>
+        <circle cx="410" cy="86" r="38" fill="#f6f3d8" opacity=".9"/>
+        <path d="M0 250c80-46 150-40 220-12 70 28 140 26 300-24v186H0z" fill="url(#hill)" opacity=".85"/>
+        <path d="M0 300c90-40 170-24 250 4 60 20 140 14 270-26v122H0z" fill="url(#hill2)"/>
+        <!-- 木屋 -->
+        <rect x="150" y="196" width="120" height="86" rx="4" fill="#c9a878"/>
+        <path d="M138 200l72-52 72 52z" fill="#8a6a3f"/>
+        <rect x="192" y="232" width="36" height="50" rx="2" fill="#5c4529"/>
+        <rect x="166" y="216" width="20" height="20" rx="2" fill="#f4f0d8"/>
+        <rect x="234" y="216" width="20" height="20" rx="2" fill="#f4f0d8"/>
+        <!-- 晾衣绳与衣物 -->
+        <path d="M60 168c110 26 240 26 400 -4" stroke="#8a6a3f" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+        <rect x="120" y="176" width="34" height="46" rx="5" fill="#f3f7ec" stroke="#d7e2cd"/>
+        <rect x="196" y="182" width="30" height="42" rx="5" fill="#bfd9b6" stroke="#d7e2cd"/>
+        <rect x="266" y="180" width="36" height="48" rx="5" fill="#e8dcbb" stroke="#d7e2cd"/>
+        <circle cx="137" cy="174" r="3" fill="#4f8a4f"/>
+        <circle cx="211" cy="180" r="3" fill="#4f8a4f"/>
+        <circle cx="284" cy="178" r="3" fill="#4f8a4f"/>
+        <!-- 草丛 -->
+        <path d="M330 330c6-22 14-30 24-34-4 16-8 26-24 34z" fill="#2f5c37"/>
+        <path d="M352 336c2-18 10-26 20-30-4 14-8 24-20 30z" fill="#4f8a4f"/>
+        <path d="M84 344c4-20 12-28 22-32-4 16-8 26-22 32z" fill="#2f5c37"/>
+        <path d="M104 350c2-16 8-22 18-26-4 12-8 20-18 26z" fill="#4f8a4f"/>
+        <!-- 布料卷 -->
+        <rect x="392" y="306" width="72" height="26" rx="13" fill="#e8dcbb"/>
+        <rect x="392" y="306" width="72" height="26" rx="13" fill="none" stroke="#c9a878"/>
+        <circle cx="404" cy="319" r="7" fill="#f7faf4"/>
+      </svg>
+      <div class="hero-badge">
+        <b>本周推荐</b>
+        《晒布的日子》植物染纪录短片 · 11 月 21 日上线
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 主体布局 -->
+<div class="wrap">
+  <div class="layout">
+
+    <!-- 左频道索引 -->
+    <aside class="left-rail" aria-label="频道索引">
+      <div class="side-card anchor-target" id="channels">
+        <div class="side-title">频道索引</div>
+        <ul class="chan-list">
+          <li><a href="/#categories">田园纪录短片 <span class="cnt">86</span></a></li>
+          <li><a href="/#categories">四季食单 <span class="cnt">42</span></a></li>
+          <li><a href="/#categories">植物染教程 <span class="cnt">31</span></a></li>
+          <li><a href="/#categories">缝纫与改衣 <span class="cnt">28</span></a></li>
+          <li><a href="/#categories">手作器物 <span class="cnt">24</span></a></li>
+          <li><a href="/#categories">田园访谈 <span class="cnt">19</span></a></li>
+          <li><a href="/#categories">节气与物候 <span class="cnt">22</span></a></li>
+          <li><a href="/#categories">乡村厨房 <span class="cnt">16</span></a></li>
+        </ul>
+      </div>
+      <div class="side-card">
+        <div class="side-title">订阅方式</div>
+        <p style="font-size:12.8px;color:var(--ink-soft);line-height:1.7;">每周四晚 20:00 更新一集正片，周日加更食单或手作短片。订阅后可收到新条目上线提醒。</p>
+      </div>
+    </aside>
+
+    <!-- 中主内容 -->
+    <main>
+
+      <!-- 1. 主题领域概览 -->
+      <section class="section anchor-target" id="overview">
+        <div class="sec-head">
+          <h2>这个领域在讲什么</h2>
+          <span class="sec-desc">自然生活影像的方向与当下值得关注的内容</span>
+        </div>
+        <div class="overview">
+          <p><strong>自然生活影像</strong>不是单一的纪录片类型，它更接近一种把镜头放慢的拍摄方式：不急着推进情节，而是让人看见一件事被慢慢做完的过程。青草衣衣从 2019 年开始拍这类内容，方向大致分成几支——第一支是田园纪录短片，记录一块菜地从翻土到收成的完整周期；第二支是四季食单，跟着节气做当季食物；第三支是手艺类，包括植物染、缝纫改衣、竹编与陶器。</p>
+          <p>眼下值得关注的几个具体方向：<strong>植物染</strong>从蓝染扩展到茜草、栀子、洋葱皮等天然染料，影像里会完整呈现媒染比例与色牢度差异；<strong>四季食单</strong>已进入冬季序列，腌菜、炉火炖煮和发酵面食是这一季的重点；<strong>缝纫与改衣</strong>则偏向旧衣改造，把一件穿旧的亚麻衬衫改成围裙或收纳袋，步骤拆得足够细，跟着做能成。</p>
+          <p>这类内容适合谁？适合想动手但不知道从哪开始的人，也适合只是想在吃饭时看点安静画面的人。区别在于：想动手的观众可以按手作教程的顺序看，从工具准备到成品验收；只想放松的观众，从田园纪录短片和节气物候入手更合适。</p>
+        </div>
+      </section>
+
+      <!-- 2. 精选内容推荐 -->
+      <section class="section anchor-target" id="featured">
+        <div class="sec-head">
+          <h2>精选影像推荐</h2>
+          <a class="sec-more" href="/#categories">按分类查看更多</a>
+        </div>
+        <div class="no-result" id="noResult">没有找到匹配的条目，换个关键词试试，比如「植物染」「食单」「改衣」。</div>
+        <div class="card-grid" id="cardGrid">
+
+          <article class="card" data-key="晒布的日子 植物染 蓝染 田园">
+            <div class="card-thumb">
+              <img src="https://picsum.photos/seed/qingcao-shaibu01/400/300" width="400" height="300" loading="lazy" alt="《晒布的日子》植物染纪录短片晾布场景">
+              <span class="card-type">田园纪录短片</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">晒布的日子</h3>
+              <p class="card-text">跟拍一位在皖南做蓝染的手艺人整整一个夏天，从建缸、养缸到第七次浸染出深靛，记录了染液 pH 值变化对颜色的影响。</p>
+              <div class="card-tags"><span class="tag">植物染</span><span class="tag">蓝染</span><span class="tag">手艺人</span></div>
+              <div class="card-meta"><span>11 月 21 日上线 · 38 分钟</span><span class="score">9.2</span></div>
+            </div>
+          </article>
+
+          <article class="card" data-key="腌菜与炉火 四季食单 冬季 发酵">
+            <div class="card-thumb">
+              <img src="https://picsum.photos/seed/qingcao-yancai02/400/300" width="400" height="300" loading="lazy" alt="《腌菜与炉火》冬季食单腌菜坛与炉火画面">
+              <span class="card-type">四季食单</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">腌菜与炉火</h3>
+              <p class="card-text">冬季食单第一集，讲雪里蕻、萝卜与辣椒三种腌法的盐比差异，以及老坛水怎样续养。附一份可打印的腌菜时间表。</p>
+              <div class="card-tags"><span class="tag">冬季食单</span><span class="tag">发酵</span><span class="tag">腌菜</span></div>
+              <div class="card-meta"><span>今天 09:30 上线 · 24 分钟</span><span class="score">9.0</span></div>
+            </div>
+          </article>
+
+          <article class="card" data-key="旧衬衫改围裙 缝纫 改衣 亚麻">
+            <div class="card-thumb">
+              <img src="https://picsum.photos/seed/qingcao-weijun03/400/300" width="400" height="300" loading="lazy" alt="旧亚麻衬衫改造围裙的手作教程封面">
+              <span class="card-type">缝纫与改衣</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">旧衬衫改围裙</h3>
+              <p class="card-text">把一件领口磨破的亚麻衬衫拆成前后片，用原有门襟做围裙系带。全程只用直线缝，家用缝纫机即可完成，含纸样尺寸表。</p>
+              <div class="card-tags"><span class="tag">旧衣改造</span><span class="tag">缝纫教程</span><span class="tag">零浪费</span></div>
+              <div class="card-meta"><span>11 月 18 日上线 · 31 分钟</span><span class="score">8.8</span></div>
+            </div>
+          </article>
+
+          <article class="card" data-key="一块菜地的十二个月 田园纪录 种植">
+            <div class="card-thumb">
+              <img src="https://picsum.photos/seed/qingcao-caidi04/400/300" width="400" height="300" loading="lazy" alt="《一块菜地的十二个月》菜地四季轮作纪录">
+              <span class="card-type">田园纪录短片</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">一块菜地的十二个月</h3>
+              <p class="card-text">固定机位拍同一块四十平米菜地整年，记录轮作顺序、覆盖作物与虫害发生周期。适合想在自己阳台或小院试种的人参考。</p>
+              <div class="card-tags"><span class="tag">轮作</span><span class="tag">菜地纪录</span><span class="tag">物候</span></div>
+              <div class="card-meta"><span>11 月 14 日上线 · 52 分钟</span><span class="score">9.4</span></div>
+            </div>
+          </article>
+
+          <article class="card" data-key="茜草与栀子 植物染 天然染料 媒染">
+            <div class="card-thumb">
+              <img src="https://picsum.photos/seed/qingcao-qiancao05/400/300" width="400" height="300" loading="lazy" alt="茜草与栀子天然染料染色对比实验画面">
+              <span class="card-type">植物染教程</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">茜草与栀子</h3>
+              <p class="card-text">同一块棉布用茜草染红、栀子染黄，分别用明矾与铁媒染对照，直观呈现四种色相差异，并给出每种染材的用量比例。</p>
+              <div class="card-tags"><span class="tag">天然染料</span><span class="tag">媒染</span><span class="tag">对照实验</span></div>
+              <div class="card-meta"><span>11 月 11 日上线 · 27 分钟</span><span class="score">8.9</span></div>
+            </div>
+          </article>
+
+          <article class="card" data-key="竹编提篮 手作器物 竹编 教程">
+            <div class="card-thumb">
+              <img src="https://picsum.photos/seed/qingcao-zhubian06/400/300" width="400" height="300" loading="lazy" alt="竹编提篮手作教程成品与工具">
+              <span class="card-type">手作器物</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">竹编提篮入门</h3>
+              <p class="card-text">从劈竹、刮青到起底、收口，完整做一只方形提篮。视频按工序分成七段，每段标出所需竹篾宽度，新手可分段跟做。</p>
+              <div class="card-tags"><span class="tag">竹编</span><span class="tag">器物手作</span><span class="tag">工序拆解</span></div>
+              <div class="card-meta"><span>11 月 7 日上线 · 46 分钟</span><span class="score">8.7</span></div>
+            </div>
+          </article>
+
+          <article class="card" data-key="和染娘的长谈 田园访谈 手艺人">
+            <div class="card-thumb">
+              <img src="https://picsum.photos/seed/qingcao-fangtan07/400/300" width="400" height="300" loading="lazy" alt="《和染娘的长谈》访谈现场画面">
+              <span class="card-type">田园访谈</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">和染娘的长谈</h3>
+              <p class="card-text">两小时对谈剪成 44 分钟，聊她如何从服装设计转去种蓝草，以及一个小作坊怎样在订单旺季与染缸养护之间取舍。</p>
+              <div class="card-tags"><span class="tag">访谈</span><span class="tag">手艺人</span><span class="tag">蓝草种植</span></div>
+              <div class="card-meta"><span>11 月 3 日上线 · 44 分钟</span><span class="score">9.1</span></div>
+            </div>
+          </article>
+
+          <article class="card" data-key="霜降后的院子 节气 物候 秋末">
+            <div class="card-thumb">
+              <img src="https://picsum.photos/seed/qingcao-shuangjiang08/400/300" width="400" height="300" loading="lazy" alt="霜降后的院子节气物候纪录画面">
+              <span class="card-type">节气与物候</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">霜降后的院子</h3>
+              <p class="card-text">记录霜降到大雪之间院子里二十种植物的变化，包括柿树落叶时间、菊科花期与最后一次采收。附节气观察手账模板。</p>
+              <div class="card-tags"><span class="tag">节气</span><span class="tag">物候观察</span><span class="tag">院子植物</span></div>
+              <div class="card-meta"><span>10 月 29 日上线 · 22 分钟</span><span class="score">8.6</span></div>
+            </div>
+          </article>
+
+          <article class="card" data-key="一锅柴火豆腐 乡村厨房 豆腐 手工">
+            <div class="card-thumb">
+              <img src="https://picsum.photos/seed/qingcao-doufu09/400/300" width="400" height="300" loading="lazy" alt="柴火灶手工豆腐制作过程">
+              <span class="card-type">乡村厨房</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">一锅柴火豆腐</h3>
+              <p class="card-text">从泡豆、磨浆到点卤、压型，全程柴火灶完成。重点讲石膏与卤水两种点法的口感差别，以及压多久决定老嫩。</p>
+              <div class="card-tags"><span class="tag">手工豆腐</span><span class="tag">柴火灶</span><span class="tag">点卤</span></div>
+              <div class="card-meta"><span>11 月 24 日上线 · 29 分钟</span><span class="score">8.8</span></div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- 3. 最新更新 -->
+      <section class="section anchor-target" id="updates">
+        <div class="sec-head">
+          <h2>最新更新与动态</h2>
+          <span class="sec-desc">近一周条目上线与拍摄进度</span>
+        </div>
+        <ul class="news-list">
+          <li><span class="news-date">今天 09:30</span><div class="news-main"><b>《腌菜与炉火》冬季食单第一集上线</b><span>雪里蕻、萝卜、辣椒三种腌法一次讲完，附腌菜时间表下载。</span></div></li>
+          <li><span class="news-date">今天 08:10</span><div class="news-main"><b>《晒布的日子》加更导演手记</b><span>补充正片未收录的养缸细节，解释为何第七次浸染才出深靛。</span></div></li>
+          <li><span class="news-date">昨天 21:10</span><div class="news-main"><b>《一锅柴火豆腐》上线</b><span>石膏与卤水点法对照，含压型时长与含水量经验值。</span></div></li>
+          <li><span class="news-date">11 月 23 日</span><div class="news-main"><b>竹编系列第四集进入后期</b><span>本集为圆形浅筐收口工序，预计 12 月 2 日上线。</span></div></li>
+          <li><span class="news-date">11 月 22 日</span><div class="news-main"><b>植物染教程更新茜草用量修订</b><span>根据观众反馈，将茜草与水的比例从 1:20 调整为 1:15。</span></div></li>
+          <li><span class="news-date">11 月 21 日</span><div class="news-main"><b>《晒布的日子》正片上线</b><span>跟拍皖南蓝染手艺人整个夏天，片长 38 分钟。</span></div></li>
+          <li><span class="news-date">11 月 19 日</span><div class="news-main"><b>节气手账模板开放下载</b><span>配合《霜降后的院子》，提供可打印的物候记录表。</span></div></li>
+          <li><span class="news-date">11 月 18 日</span><div class="news-main"><b>《旧衬衫改围裙》教程上线</b><span>全程直线缝，附纸样尺寸表，家用缝纫机可完成。</span></div></li>
+          <li><span class="news-date">11 月 16 日</span><div class="news-main"><b>冬季拍摄计划公布</b><span>12 月将拍摄年糕制作与腊味晾晒，取景地在浙西山村。</span></div></li>
+          <li><span class="news-date">11 月 14 日</span><div class="news-main"><b>《一块菜地的十二个月》上线</b><span>固定机位整年记录轮作顺序与虫害周期。</span></div></li>
+        </ul>
+      </section>
+
+      <!-- 4. 分类入口 -->
+      <section class="section anchor-target" id="categories">
+        <div class="sec-head">
+          <h2>分类频道</h2>
+          <span class="sec-desc">按你想做的事或想看的内容进入</span>
+        </div>
+        <div class="cat-grid">
+          <a class="cat-item" href="/#featured"><b>田园纪录短片</b><span>菜地、院子、四季劳作的长线记录</span></a>
+          <a class="cat-item" href="/#featured"><b>四季食单</b><span>跟着节气做当季食物与发酵</span></a>
+          <a class="cat-item" href="/#featured"><b>植物染教程</b><span>蓝染、茜草、栀子等天然染料实操</span></a>
+          <a class="cat-item" href="/#featured"><b>缝纫与改衣</b><span>旧衣改造、纸样与基础缝制</span></a>
+          <a class="cat-item" href="/#featured"><b>手作器物</b><span>竹编、陶器、木作工序拆解</span></a>
+          <a class="cat-item" href="/#featured"><b>田园访谈</b><span>与手艺人的长谈与工作现场</span></a>
+          <a class="cat-item" href="/#featured"><b>节气与物候</b><span>二十四节气的院子观察与手账</span></a>
+          <a class="cat-item" href="/#featured"><b>乡村厨房</b><span>柴火灶、手工豆腐、腌腊与面食</span></a>
+        </div>
+      </section>
+
+      <!-- 5. 深度解析 -->
+      <section class="section anchor-target" id="deepdive">
+        <div class="sec-head">
+          <h2>深度解析：自然生活影像怎么挑、怎么看</h2>
+        </div>
+        <div class="article">
+          <h3>纪录短片与教程片，是两种完全不同的观看对象</h3>
+          <p>很多人第一次打开青草衣衣，会把《一块菜地的十二个月》和《旧衬衫改围裙》当成同一类内容，看着看着就失去耐心。其实这两类片子的目的相反：纪录短片的目标是让你<strong>看见过程</strong>，它不要求你动手；教程片的目标是让你<strong>复制结果</strong>，它必须把关键参数说清楚。判断方法很简单——如果片头三十秒内出现工具清单、尺寸表或用量比例，它就是教程；如果片头是环境声和空镜，那多半是纪录短片。</p>
+          <p>这个区别直接影响你怎么安排观看时间。纪录短片适合整段看完，中途打断会丢失季节推进的节奏感；教程片则适合分段看，甚至在动手时反复回看某一段。</p>
+
+          <h3>同样是手作教程，工序密度差别很大</h3>
+          <p>以植物染和竹编为例，两者都是手作，但学习曲线完全不同：</p>
+          <ul>
+            <li><strong>植物染</strong>属于「参数型」教程。成败取决于染料与水的比例、媒染剂用量、温度与时间，画面只是辅助。看的时候要暂停记数字，比如茜草染红通常用到布重的 30%—50% 染材。</li>
+            <li><strong>竹编</strong>属于「手感型」教程。劈竹的厚薄、起底时篾条的松紧，视频很难完全传达，必须自己上手试。看的时候重点看手部动作的角度，而不是记参数。</li>
+            <li><strong>缝纫改衣</strong>介于两者之间。纸样尺寸是参数，缝合时的布料张力是手感，因此这类教程通常会同时给尺寸表和特写镜头。</li>
+          </ul>
+          <p>如果你时间有限，先挑参数型教程入门，成功率更高；手感型教程更适合已经有过一次动手经验之后再看。</p>
+
+          <h3>四季食单的价值在于时序，而不在菜谱本身</h3>
+          <p>市面上菜谱极多，四季食单之所以值得单独看，是因为它把「什么时候做」放在了「怎么做」前面。以冬季序列为例，腌菜要在气温稳定低于 10℃ 之后开始，太早容易坏缸；炉火炖煮则适合在第一次霜降之后，因为此时的根茎类淀粉转化更充分，口感更甜。</p>
+          <p>观看这类内容时，建议先看节气对应的那一集，再回头看上一季的收尾。比如现在看《腌菜与炉火》，可以顺带回看秋季食单里关于辣椒采收的那一集，两集连起来才是完整的从田间到坛子的链条。</p>
+
+          <h3>访谈类内容容易被低估</h3>
+          <p>《和染娘的长谈》这类长访谈，播放量通常低于教程，但它解决的是教程解决不了的问题：<strong>一个人为什么长期做这件事，以及做到什么程度算可持续</strong>。片中提到的小作坊订单与染缸养护之间的取舍，是任何教程都不会讲的现实约束。</p>
+          <p>如果你正在考虑把手作变成长期投入，访谈比教程更值得先看。教程教你做一件成品，访谈告诉你做一百件之后会遇到什么。</p>
+
+          <h3>判断一个条目值不值得投入时间，看三个信号</h3>
+          <ul>
+            <li><strong>片长与工序是否匹配</strong>：一只方形竹篮从劈竹到收口，四十分钟以上才合理；如果十分钟讲完，多半省略了关键步骤。</li>
+            <li><strong>是否给出可验证的数字</strong>：盐比、染材比例、纸样尺寸、发酵天数。有数字的教程可以复现，只有形容词的教程只能观赏。</li>
+            <li><strong>失败案例是否被保留</strong>：好的手作影像不会剪掉染坏的布和开裂的竹篾。失败片段往往比成品更有信息量。</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 6. 观看指南 -->
+      <section class="section anchor-target" id="guide">
+        <div class="sec-head">
+          <h2>观看与动手路径</h2>
+          <span class="sec-desc">从看到做的四个阶段，按顺序推进更省时间</span>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <b>先看田园纪录短片</b>
+            <p>从《一块菜地的十二个月》或《晒布的日子》入手，熟悉整体节奏与拍摄语感，不急着动手。</p>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <b>挑一个参数型教程</b>
+            <p>植物染的茜草与栀子对照、或缝纫的旧衬衫改围裙，参数明确、材料易得，第一次成功率最高。</p>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <b>跟着节气做一次食单</b>
+            <p>冬季从腌菜开始，盐比与时间表都有明确数值，失败成本低，适合建立信心。</p>
+          </div>
+          <div class="step">
+            <div class="step-num">4</div>
+            <b>再进入手感型手作</b>
+            <p>竹编、陶器等需要反复试的项目放在后面，此时你已习惯分段回看与暂停记录。</p>
+          </div>
+        </div>
+        <div class="overview" style="margin-top:16px;">
+          <p>判断一个条目是否值得投入时间，可以先看它的更新日期与片长：近一个月内上线、片长与工序匹配的条目，通常制作更完整。若你只想放松，直接看节气与物候类短片即可，不必进入教程序列。类似条目之间比较时，优先看是否保留失败片段与具体数值，这两点最能区分「能复现」和「只能看」。</p>
+        </div>
+      </section>
+
+      <!-- 7. FAQ -->
+      <section class="section anchor-target" id="faq">
+        <div class="sec-head">
+          <h2>常见问答</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>四季食单一般多久更新一次？</summary>
+            <div class="ans">按节气走，平均每两到三周更新一集，冬季序列更新更密集。目前《腌菜与炉火》已于 11 月 25 日上线，下一集炉火炖煮预计 12 月中旬。</div>
+          </details>
+          <details>
+            <summary>植物染和缝纫改衣，新手先学哪个比较好？</summary>
+            <div class="ans">建议先学缝纫改衣里的《旧衬衫改围裙》，全程直线缝，工具只需一台家用缝纫机。植物染涉及染材比例与媒染，参数更多，适合有一点动手经验之后再开始。</div>
+          </details>
+          <details>
+            <summary>蓝染和茜草染有什么区别？</summary>
+            <div class="ans">蓝染靠发酵建缸，颜色随浸染次数叠加，从浅蓝到深靛需要反复浸染氧化；茜草染属于媒染染法，一次上色，颜色深浅主要由染材用量和媒染剂决定。两者在操作节奏上差别很大。</div>
+          </details>
+          <details>
+            <summary>第一次看青草衣衣，从哪个条目开始比较好？</summary>
+            <div class="ans">如果只想放松，从《霜降后的院子》或《一块菜地的十二个月》开始；如果想动手，直接从《旧衬衫改围裙》或《茜草与栀子》入手，步骤拆得最细。</div>
+          </details>
+          <details>
+            <summary>竹编类教程的评判标准通常是什么？</summary>
+            <div class="ans">主要看三点：是否标出每段竹篾的宽度、是否保留劈竹失败的片段、收口工序是否单独成段。这三点齐全，基本可以跟着做出成品。</div>
+          </details>
+          <details>
+            <summary>田园访谈和纪录短片有什么不同？</summary>
+            <div class="ans">纪录短片看的是过程与环境，访谈看的是人的判断和取舍。像《和染娘的长谈》这类内容，信息密度在对话里而不在画面上，适合在做其他事时听。</div>
+          </details>
+        </div>
+      </section>
+
+      <!-- 8. 用户评论 -->
+      <section class="section anchor-target" id="comments">
+        <div class="sec-head">
+          <h2>观众评论</h2>
+          <span class="sec-desc">近期条目下的真实留言摘选</span>
+        </div>
+        <div class="comments">
+          <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#4f8a4f">林</span><b>林间小满</b><span class="time">今天 10:12</span></div><p>《腌菜与炉火》里那个盐比讲得很清楚，我按 3% 试了一坛雪里蕻，第三天开始出水的状态和片子里一样。</p><div class="like">有用 86</div></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#8a6a3f">阿</span><b>阿禾的院子</b><span class="time">今天 09:48</span></div><p>晒布那集看到第七次浸染才出深靛，才知道自己之前染三次就放弃是正常的。</p><div class="like">有用 74</div></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#5f9a5c">南</span><b>南坡种豆</b><span class="time">昨天 22:05</span></div><p>菜地十二个月那集信息量太大，我暂停了好几次做笔记，轮作顺序那段对我阳台种菜帮助很大。</p><div class="like">有用 63</div></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#c9a878">缝</span><b>缝纫机新手</b><span class="time">昨天 20:31</span></div><p>旧衬衫改围裙跟着做完了，纸样尺寸表很准，就是门襟做系带那步我拆了两次才明白。</p><div class="like">有用 58</div></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#2f5c37">青</span><b>青苔与瓦</b><span class="time">11 月 24 日</span></div><p>竹编提篮的收口部分讲得偏快，来回看了三遍才跟上，希望以后能单独出一集收口。</p><div class="like">有用 41</div></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#7fb473">苏</span><b>苏木染坊</b><span class="time">11 月 24 日</span></div><p>茜草用量从 1:20 改到 1:15 之后颜色确实更饱和，这个修订很及时。</p><div class="like">有用 39</div></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#8fbf87">慢</span><b>慢一点的饭</b><span class="time">11 月 23 日</span></div><p>柴火豆腐那集点卤讲得细，但家里没有柴火灶，用燃气灶试了一次也能成，就是火候要压小。</p><div class="like">有用 47</div></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#4f8a4f">半</span><b>半亩方塘</b><span class="time">11 月 23 日</span></div><p>访谈那集节奏对我偏慢，但染娘讲订单和染缸养护的取舍那段很真实，值得听。</p><div class="like">有用 28</div></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#8a6a3f">冬</span><b>冬储白菜</b><span class="time">11 月 22 日</span></div><p>想问腌菜用的坛子一定要陶土的吗？玻璃罐行不行，片子里面没提到。</p><div class="like">有用 22</div></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#5f9a5c">山</span><b>山腰上的猫</b><span class="time">11 月 22 日</span></div><p>霜降后的院子那集我拿来当睡前视频，画面安静，讲植物变化也不吵。</p><div class="like">有用 35</div></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#c9a878">织</span><b>织布的下午</b><span class="time">11 月 21 日</span></div><p>希望缝纫系列能出一集关于旧毛衣改造的，亚麻衬衫那种我家里没有。</p><div class="like">有用 19</div></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#2f5c37">蓝</span><b>蓝草田边</b><span class="time">11 月 21 日</span></div><p>养缸那段拍得真好，pH 值变化的字幕要是能再停留久一点就更好了。</p><div class="like">有用 33</div></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#7fb473">小</span><b>小院四季</b><span class="time">11 月 20 日</span></div><p>节气手账模板下载了，打印出来贴在冰箱上，孩子每天去画院子里的变化。</p><div class="like">有用 44</div></div>
+          <div class="cmt"><div class="cmt-head"><span class="avatar" style="background:#8fbf87">陈</span><b>陈年的坛</b><span class="time">11 月 19 日</span></div><p>整体节奏偏慢，我一般 1.25 倍速看教程部分，纪录短片正常速看，效果刚好。</p><div class="like">有用 17</div></div>
+        </div>
+      </section>
+
+      <!-- 9. 相关资讯 -->
+      <section class="section anchor-target" id="news">
+        <div class="sec-head">
+          <h2>相关资讯</h2>
+          <span class="sec-desc">自然生活影像领域近期动态</span>
+        </div>
+        <div class="info-list">
+          <div class="info-item"><span class="d">2026-11-24</span><b>冬季手作内容集中上线，发酵与编织成两大方向</b><p>多家自然生活影像团队在本月集中推出冬季选题，腌渍发酵与竹木编织的条目数量明显增加，教程类占比高于去年。</p></div>
+          <div class="info-item"><span class="d">2026-11-22</span><b>天然染料用量标准在社区内出现修订讨论</b><p>围绕茜草、栀子等染材的用量比例，手作社区近期出现多轮对照实验，部分创作者据此调整了教程中的推荐数值。</p></div>
+          <div class="info-item"><span class="d">2026-11-20</span><b>节气物候类短片播放完成率高于其他类型</b><p>平台数据显示，片长 20 分钟以内的节气观察类内容完播率明显更高，适合作为夜间与通勤场景的观看选择。</p></div>
+          <div class="info-item"><span class="d">2026-11-17</span><b>旧衣改造教程搜索量在换季期间上升</b><p>随着气温下降，围绕旧毛衣、旧衬衫改造的搜索需求上升，纸样与尺寸表成为观众最关注的教程要素。</p></div>
+          <div class="info-item"><span class="d">2026-11-12</span><b>乡村厨房类内容开始强调器具替代方案</b><p>不少创作者在柴火灶、土陶坛等器具之外补充了家用替代做法，降低了城市观众的动手门槛。</p></div>
+          <div class="info-item"><span class="d">2026-11-08</span><b>长访谈形式在手作领域获得更多关注</b><p>以手艺人生存状态为主题的长访谈，近期在社区讨论中被频繁引用，成为教程之外了解行业的补充视角。</p></div>
+        </div>
+      </section>
+
+      <!-- 10. 相关推荐 -->
+      <section class="section anchor-target" id="related">
+        <div class="sec-head">
+          <h2>相关推荐方向</h2>
+          <span class="sec-desc">延伸观看与动手方向</span>
+        </div>
+        <div class="rel-tags">
+          <a href="/#featured">洋葱皮染黄实操</a>
+          <a href="/#featured">旧毛衣改造护腕</a>
+          <a href="/#featured">年糕与石臼</a>
+          <a href="/#featured">腊味晾晒的湿度控制</a>
+          <a href="/#featured">陶器拉坯入门</a>
+          <a href="/#featured">阳台轮作种植表</a>
+          <a href="/#featured">草木灰制碱</a>
+          <a href="/#featured">冬储根茎类保存法</a>
+        </div>
+      </section>
+
+      <!-- 11. 补充板块：时间线 + 可信度分层 -->
+      <section class="section anchor-target" id="timeline">
+        <div class="sec-head">
+          <h2>条目时间线</h2>
+          <span class="sec-desc">近期上线条目与拍摄节点</span>
+        </div>
+        <div class="overview">
+          <div class="timeline">
+            <div class="tl-item"><b>《腌菜与炉火》上线</b><span>冬季食单第一集，含三种腌法与时间表。</span><span class="date">2026-11-25</span></div>
+            <div class="tl-item"><b>《一锅柴火豆腐》上线</b><span>石膏与卤水点法对照，压型时长说明。</span><span class="date">2026-11-24</span></div>
+            <div class="tl-item"><b>《晒布的日子》正片与导演手记</b><span>皖南蓝染手艺人整个夏天的记录。</span><span class="date">2026-11-21</span></div>
+            <div class="tl-item"><b>《旧衬衫改围裙》上线</b><span>直线缝可完成，附纸样尺寸表。</span><span class="date">2026-11-18</span></div>
+            <div class="tl-item"><b>《一块菜地的十二个月》上线</b><span>整年固定机位记录轮作与虫害周期。</span><span class="date">2026-11-14</span></div>
+            <div class="tl-item"><b>《茜草与栀子》上线</b><span>四种色相对照实验与染材用量。</span><span class="date">2026-11-11</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section anchor-target" id="trust">
+        <div class="sec-head">
+          <h2>条目可信度分层</h2>
+          <span class="sec-desc">按可复现程度给教程分级，帮你决定投入顺序</span>
+        </div>
+        <div class="trust-board">
+          <div class="trust-col">
+            <h4><i style="background:#2f5c37"></i>可直接复现</h4>
+            <div class="lv">参数完整，材料易得</div>
+            <ul>
+              <li><b>旧衬衫改围裙</b> · 纸样齐全</li>
+              <li><b>腌菜与炉火</b> · 盐比明确</li>
+              <li><b>一锅柴火豆腐</b> · 含替代做法</li>
+            </ul>
+          </div>
+          <div class="trust-col">
+            <h4><i style="background:#c9a878"></i>需经验辅助</h4>
+            <div class="lv">参数在手，手感需练</div>
+            <ul>
+              <li><b>茜草与栀子</b> · 媒染比例清楚</li>
+              <li><b>晒布的日子</b> · 养缸看状态</li>
+              <li><b>竹编提篮入门</b> · 收口偏快</li>
+            </ul>
+          </div>
+          <div class="trust-col">
+            <h4><i style="background:#8fbf87"></i>以观看为主</h4>
+            <div class="lv">信息在过程与人</div>
+            <ul>
+              <li><b>一块菜地的十二个月</b></li>
+              <li><b>和染娘的长谈</b></li>
+              <li><b>霜降后的院子</b></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 右辅助栏 -->
+    <aside class="right-rail" aria-label="辅助信息">
+      <div class="side-card anchor-target" id="hot">
+        <div class="side-title">本周热看</div>
+        <ul class="hot-list">
+          <li><span class="rank">1</span><div><a href="/#featured">晒布的日子</a><span class="meta">植物染纪录 · 9.2</span></div></li>
+          <li><span class="rank">2</span><div><a href="/#featured">腌菜与炉火</a><span class="meta">冬季食单 · 9.0</span></div></li>
+          <li><span class="rank">3</span><div><a href="/#featured">一块菜地的十二个月</a><span class="meta">田园纪录 · 9.4</span></div></li>
+          <li><span class="rank">4</span><div><a href="/#featured">和染娘的长谈</a><span class="meta">田园访谈 · 9.1</span></div></li>
+          <li><span class="rank">5</span><div><a href="/#featured">旧衬衫改围裙</a><span class="meta">改衣教程 · 8.8</span></div></li>
+          <li><span class="rank">6</span><div><a href="/#featured">茜草与栀子</a><span class="meta">植物染 · 8.9</span></div></li>
+        </ul>
+      </div>
+
+      <div class="side-card">
+        <div class="side-title">更新流</div>
+        <ul class="update-flow">
+          <li><span class="t">今天</span><span class="n">《腌菜与炉火》上线</span></li>
+          <li><span class="t">昨天</span><span class="n">《一锅柴火豆腐》上线</span></li>
+          <li><span class="t">11-23</span><span class="n">竹编第四集进入后期</span></li>
+          <li><span class="t">11-22</span><span class="n">茜草用量比例修订</span></li>
+          <li><span class="t">11-21</span><span class="n">《晒布的日子》正片</span></li>
+          <li><span class="t">11-19</span><span class="n">节气手账模板开放</span></li>
+        </ul>
+      </div>
+
+      <div class="side-card">
+        <div class="side-title">分类速达</div>
+        <ul class="chan-list">
+          <li><a href="/#categories">植物染教程 <span class="cnt">31</span></a></li>
+          <li><a href="/#categories">四季食单 <span class="cnt">42</span></a></li>
+          <li><a href="/#categories">缝纫与改衣 <span class="cnt">28</span></a></li>
+          <li><a href="/#categories">节气与物候 <span class="cnt">22</span></a></li>
+        </ul>
+      </div>
+
+      <div class="side-card">
+        <div class="side-title">订阅提示</div>
+        <p style="font-size:12.6px;color:var(--ink-soft);line-height:1.75;">每周四 20:00 正片更新，周日加更食单或手作短片。订阅后新条目上线会收到通知。</p>
+      </div>
+    </aside>
+
+  </div>
+</div>
+
+<!-- 页尾 -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand">
+        <svg width="34" height="34" viewBox="0 0 48 48" aria-hidden="true">
+          <circle cx="24" cy="24" r="22" fill="#2f5c37"/>
+          <path d="M24 37c0-9 3-15 10-19-1 10-5 15-10 19z" fill="#8fbf87"/>
+          <path d="M24 37c0-9-3-15-10-19 1 10 5 15 10 19z" fill="#c9a878"/>
+          <path d="M24 37V17" stroke="#e8f1e2" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">青草衣衣</span>
+          <span class="brand-sub">GRASS &amp; GARMENT</span>
+        </span>
+      </div>
+      <p class="footer-desc">自然生活影像品牌，记录田园、手作与四季饮食。用足够慢的镜头，把一件事被做完的过程完整留下来。</p>
+    </div>
+    <div class="footer-col">
+      <h4>内容频道</h4>
+      <ul>
+        <li><a href="/#featured">田园纪录短片</a></li>
+        <li><a href="/#featured">四季食单</a></li>
+        <li><a href="/#featured">植物染教程</a></li>
+        <li><a href="/#featured">缝纫与改衣</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>延伸阅读</h4>
+      <ul>
+        <li><a href="/#deepdive">深度解析</a></li>
+        <li><a href="/#guide">观看与动手路径</a></li>
+        <li><a href="/#faq">常见问答</a></li>
+        <li><a href="/#timeline">条目时间线</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>社区</h4>
+      <ul>
+        <li><a href="/#comments">观众评论</a></li>
+        <li><a href="/#news">相关资讯</a></li>
+        <li><a href="/#trust">可信度分层</a></li>
+        <li><a href="/#related">相关推荐</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2019—2026 青草衣衣 自然生活影像 · 内容与条目信息以实际上线为准</span>
+    <span>站内热度、评分与订阅数为社区示例数据，用于展示条目参考维度</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var input = document.getElementById('searchInput');
+  var form = document.getElementById('searchForm');
+  var grid = document.getElementById('cardGrid');
+  var noResult = document.getElementById('noResult');
+  var cards = grid ? Array.prototype.slice.call(grid.querySelectorAll('.card')) : [];
+
+  function doFilter(){
+    var q = (input.value || '').trim().toLowerCase();
+    if(!q){
+      cards.forEach(function(c){ c.style.display = ''; });
+      noResult.classList.remove('show');
+      return;
+    }
+    var hit = 0;
+    cards.forEach(function(c){
+      var text = (c.textContent + ' ' + (c.getAttribute('data-key')||'')).toLowerCase();
+      var match = text.indexOf(q) > -1;
+      c.style.display = match ? '' : 'none';
+      if(match) hit++;
+    });
+    noResult.classList.toggle('show', hit === 0);
+  }
+
+  if(form){
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      doFilter();
+      var feat = document.getElementById('featured');
+      if(feat) feat.scrollIntoView({behavior:'smooth', block:'start'});
+    });
+  }
+  if(input){
+    input.addEventListener('input', doFilter);
+  }
+
+  var subBtn = document.getElementById('subBtn');
+  if(subBtn){
+    subBtn.addEventListener('click', function(){
+      var old = subBtn.innerHTML;
+      subBtn.innerHTML = '已订阅更新提醒';
+      subBtn.disabled = true;
+      setTimeout(function(){
+        subBtn.innerHTML = old;
+        subBtn.disabled = false;
+      }, 2200);
+    });
+  }
+})();
+</script>
+</body>
+            </html>
